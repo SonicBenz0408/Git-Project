@@ -23,6 +23,17 @@ Both of the methods take lots of steps to complete and can be time-consuming whe
 
 
 ## 2.Create a new working tree
+###(1) **Command:'git worktree add -b <new_branch_name> <path>/<branch>'**
+* By this command,git will create a new branch called <new_branch_name> on the basis of <branch> which we often use **'master'**.
+The new branch is also called **'linked workingtree'** because it is linked to the repository.However,you can do your work on them indepently.
+
+* Then,you can switch each of them to different branches,and do the work on different branches simultaneously.
+
+* If <branch> is omitted,it defaults to **HEAD**.By default,'-b' would refuse to create a new branch if it exists already.If you want to replace the old one with new one,you can use **'-B'** rather than '-b'.
+
+###(2)**'-f' or '--force'**
+* By default,when <branch> is already checked out by another working tree,or if the <path> is already assigned to another working tree but it is missing(for example,<path> was deleted manually),the new working tree would not be created.You can use **'-f' or '--force'** to override this safeguard.
+
 ## 3.Remove a linked working tree
 `git worktree remove <worktree>`
 
