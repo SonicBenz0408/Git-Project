@@ -15,9 +15,9 @@ After the changes in the new linked working tree are committed and your work is 
 
 * **When & Why**
 
-Let's say that you're working on a big feature in branch**feature**and it's nowhere near finished. If you now have to fix a sudden bug and implement a patch from the**master**branch or switch between branches to compare them to each other without using the `worktree` command, there are two ways to do it:
-1. You will have to `add` your WIP to the staging area, `commit` them, go to branch**master**to do stuff, come back, and then use `git reset` to get back to where you were.
-2. If you know this method, you can use `git stash` to teporarily saved your WIP, leave branch**feature**to do other stuff, and then use `git stash apply` to go back.
+Let's say that you're working on a big feature in branch **feature** and it's nowhere near finished. If you now have to fix a sudden bug and implement a patch from the **master** branch or switch between branches to compare them to each other without using the `worktree` command, there are two ways to do it:
+1. You will have to `add` your WIP to the staging area, `commit` them, go to branch **master** to do stuff, come back, and then use `git reset` to get back to where you were.
+2. If you know this method, you can use `git stash` to teporarily saved your WIP, leave branch **feature** to do other stuff, and then use `git stash apply` to go back.
 
 Both of the methods take lots of steps to complete and can be time-consuming when you have to repeat it frequently. But with the `worktree` command, you can save all those troubles and working on another branch without interrupting your current work. 
 
