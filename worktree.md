@@ -23,7 +23,7 @@ Both of the methods take lots of steps to complete and can be time-consuming whe
 
 
 ## 2.Create a new working tree
-### (1) **Command:'git worktree add -b <new_branch_name> <path>/<branch>'**
+### (1) **Command:`git worktree add -b <new_branch_name> <path>/<branch>`**
 * By this command,git will create a new branch called <new_branch_name> on the basis of <branch> which we often use **'master'**.
 The new branch is also called **'linked workingtree'** because it is linked to the repository.However,you can do your work on them indepently.
 
@@ -31,7 +31,7 @@ The new branch is also called **'linked workingtree'** because it is linked to t
 
 * If <branch> is omitted,it defaults to **HEAD**.By default,'-b' would refuse to create a new branch if it exists already.If you want to replace the old one with new one,you can use **'-B'** rather than '-b'.
 
-### (2)**'-f' or '--force'**
+### (2)**`-f` or `--force`**
 * By default,when <branch> is already checked out by another working tree,or if the <path> is already assigned to another working tree but it is missing(for example,<path> was deleted manually),the new working tree would not be created.You can use **'-f' or '--force'** to override this safeguard.
 
 ## 3.Remove a linked working tree
@@ -63,15 +63,15 @@ You have to use the following command to remove the linked working tree without 
 `git worktree prune`
 
 ## 5.Lock & Unlock
-### (1)Lock 
+### **(1)Lock** 
 `git worktree lock [--reason <string>] <worktree>`
 
 If a linked working tree is stored on a portable device or network share which is not always mounted, you can prevent its administrative files from being pruned by issuing the git worktree lock command, optionally specifying `--reason` to explain why the working tree is locked.
-### (2)Unlock
+### **(2)Unlock**
 `git worktree unlock <worktree>`
 
 Unlock a working tree, allowing it to be pruned, moved or deleted.
-### (3)Example
+### **(3)Example**
 An example case here is:
 * insert thumb drive, mount file system
 * add work-tree on thumb drive, use it for a while
