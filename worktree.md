@@ -29,7 +29,7 @@ Both of the methods take lots of steps to complete and can be time-consuming whe
 ==================
 * By this command,git will create a new branch called <new_branch_name> on the basis of <branch> which we often use **'master'**.
 The new branch is also called **'linked workingtree'** because it is linked to the repository.However,you can do your work on them indepently.
-		>>>>>>>>master
+	>>>>>>>>master
 
 * Then,you can switch each of them to different branches,and do the work on different branches simultaneously.
 
