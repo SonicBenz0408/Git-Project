@@ -23,13 +23,11 @@ Both of the methods take lots of steps to complete and can be time-consuming whe
 
 
 ## 2.Create a new working tree
-<<<<<<< HEAD
-###(1) **Command:'git worktree add -b <new_branch_name> <path>/<branch>'**
+### (1) **Command:'git worktree add -b <new_branch_name> <path>/<branch>'**
 * By this command,git will create a file and create a new branch called <new_branch_name> on the basis of the branch which you are working at in that file.The file called <branch> will be put at the last floor of the <path>.If you input '..' for the <path>,by the default,<path> means your working repository.
-==================
+
 * By this command,git will create a new branch called <new_branch_name> on the basis of <branch> which we often use **'master'**.
 The new branch is also called **'linked workingtree'** because it is linked to the repository.However,you can do your work on them indepently.
-	>>>>>>>>master
 
 * Then,you can switch each of them to different branches,and do the work on different branches simultaneously.
 
